@@ -1,8 +1,19 @@
-* {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
 p,
 span {
   font-size: 1rem;
+}
+
+body {
+  background-color: #fafafa;
+  margin: 0;
+  padding: 0;
+}
+/* dark mode using media */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #252525;
+  }
+  * {
+    color: #fafafa;
+  }
 }
