@@ -13,7 +13,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "jsxImportSource": "@emotion/react",
+    // "jsxImportSource": "@emotion/react",
     "incremental": true,
     "plugins": [
       {
@@ -22,16 +22,14 @@
     ],
     "paths": {
       "~/*": ["./src/*"],
-      "$/*": ["./*"]
+      "$lib/*": ["./src/lib/*"]
     }
   },
   "include": [
     "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/pages/**/*.ts",
-    "src/pages/**/*.tsx"
+    "src/**/*.ts",
+    "src/**/*.tsx"
   ],
   "exclude": ["node_modules"]
 }
